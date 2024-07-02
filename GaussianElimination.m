@@ -11,7 +11,7 @@ end
 
 
 function [A,B] = forwardElimination(A,B)
-for i = 1:size(A,2)
+for i = 1:size(A,2)-1
     for j = i+1:size(A,1)
         factor = A(j,i)/A(i,i);
         for k = i:size(A,2)
